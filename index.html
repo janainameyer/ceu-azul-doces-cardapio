@@ -9,56 +9,96 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #f4f9fd;
     }
 
     header {
-      background: #87CEEB;
-      color: white;
+      background: linear-gradient(135deg, #87CEEB, #FFD966);
+      color: #03396c;
       text-align: center;
-      padding: 25px 10px;
+      padding: 30px 15px;
     }
 
     header h1 {
       margin: 0;
+      font-size: 28px;
     }
 
-    .produtos {
+    header p {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #03396c;
+      border-left: 6px solid #FFD966;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
-      padding: 20px;
+      margin-top: 15px;
     }
 
     .card {
       background: white;
-      border-radius: 14px;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
     }
 
     .card img {
       width: 100%;
-      border-radius: 12px;
+      height: 170px;
+      object-fit: cover;
     }
 
-    .card h2 {
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
       font-size: 16px;
-      margin: 10px 0 5px;
     }
 
-    .card span {
-      color: #2f6f91;
+    .price {
+      color: #f1c40f;
       font-weight: bold;
-      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
     }
 
     footer {
-      background: white;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 20px;
+      font-size: 13px;
+      color: #555;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -67,33 +107,120 @@
 
 <header>
   <h1>☁️ Céu Azul Doces</h1>
-  <p>Confeitaria artesanal</p>
+  <p>Confeitaria artesanal • Cardápio online</p>
 </header>
 
-<main class="produtos">
+<div class="container">
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Bolo+de+Chocolate">
-    <h2>Bolo de Chocolate</h2>
-    <span>R$ 120,00</span>
+  <!-- BOLOS DE FESTA -->
+  <h2>🎂 Bolos de Festa</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Bolo+de+Festa">
+      <div class="card-content">
+        <h3>Bolo Decorado</h3>
+        <div class="price">Sob consulta</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Gostaria de um bolo de festa">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Bolo+de+Morango">
-    <h2>Bolo de Morango</h2>
-    <span>R$ 135,00</span>
+  <!-- CASEIRINHOS -->
+  <h2>🍰 Caseirinhos</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Bolo+Caseiro">
+      <div class="card-content">
+        <h3>Bolo Caseiro</h3>
+        <div class="price">R$ XX,00</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero bolo caseiro">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Doces+Finoss">
-    <h2>Doces Finos (100 un)</h2>
-    <span>R$ 180,00</span>
+  <!-- DOCINHOS -->
+  <h2>🍬 Docinhos de Festa</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Docinhos">
+      <div class="card-content">
+        <h3>Docinhos (100 un)</h3>
+        <div class="price">R$ XX,00</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero docinhos de festa">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
-</main>
+  <!-- LEMBRANCINHAS -->
+  <h2>🎁 Lembrancinhas</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Lembrancinhas">
+      <div class="card-content">
+        <h3>Lembrancinhas Personalizadas</h3>
+        <div class="price">Sob consulta</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero lembrancinhas">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FESTA NA ESCOLA -->
+  <h2>🏫 Festa na Escola</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Festa+na+Escola">
+      <div class="card-content">
+        <h3>Kit Festa Escolar</h3>
+        <div class="price">Sob consulta</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero kit festa escolar">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BEM CASADO -->
+  <h2>💍 Bem Casado</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Bem+Casado">
+      <div class="card-content">
+        <h3>Bem Casado</h3>
+        <div class="price">R$ XX,00</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero bem casado">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAO DE MEL -->
+  <h2>🍯 Pão de Mel</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Pão+de+Mel">
+      <div class="card-content">
+        <h3>Pão de Mel</h3>
+        <div class="price">R$ XX,00</div>
+        <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero pão de mel">
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <footer>
-  <p>📲 Pedidos via WhatsApp</p>
+  © 2026 • Céu Azul Doces Confeitaria • 📲 (11) 98534-8963
 </footer>
 
 </body>
