@@ -5,102 +5,76 @@
   <title>Céu Azul Doces | Cardápio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f9fd;
-    }
-
-    header {
-      background: linear-gradient(135deg, #87CEEB, #FFD966);
-      color: #03396c;
-      text-align: center;
-      padding: 30px 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    header p {
-      margin-top: 6px;
-      font-size: 14px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f9ff;
+        display: flex;
+        justify-content: center;
     }
 
     .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    h2 {
-      color: #03396c;
-      border-left: 6px solid #FFD966;
-      padding-left: 10px;
-      margin-top: 40px;
+    header {
+        background-color: #a8d8ff;
+        color: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 15px;
+    h1 {
+        margin: 0;
     }
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+    .categoria {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    .card:hover {
-      transform: translateY(-4px);
+    .categoria h2 {
+        background-color: #fff2a8;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
     }
 
-    .card img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
+    .item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px dashed #ddd;
     }
 
-    .card-content {
-      padding: 15px;
-      text-align: center;
+    .item:last-child {
+        border-bottom: none;
     }
 
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 16px;
+    .whatsapp {
+        display: block;
+        margin: 30px auto;
+        background-color: #25d366;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        width: fit-content;
     }
+</style>
 
-    .price {
-      color: #f1c40f;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 16px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-      color: #555;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 
 <body>
