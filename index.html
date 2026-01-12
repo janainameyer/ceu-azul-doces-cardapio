@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Céu Azul Doces | Cardápio</title>
+<title>Céu Azul Doces | Bolos Personalizados</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -15,18 +15,16 @@ body {
 }
 
 .container {
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
     padding: 20px;
 }
 
-/* HEADER */
 header {
     background-color: #a8d8ff;
     border-radius: 16px;
-    padding: 30px 20px;
+    padding: 30px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 header h1 {
@@ -34,77 +32,67 @@ header h1 {
     font-size: 36px;
 }
 
-header p {
-    margin-top: 8px;
-    font-size: 18px;
-}
-
-/* TITULO DAS CATEGORIAS */
 .category-title {
     background-color: #fff2a8;
     text-align: center;
-    padding: 14px;
+    padding: 16px;
     border-radius: 12px;
     font-size: 26px;
     margin: 50px 0 30px;
 }
 
-/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* CARD */
 .card {
-    background-color: #fff;
+    background: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.02);
 }
 
 .card img {
     width: 100%;
-    height: 260px;
+    height: 230px;
     object-fit: cover;
 }
 
-/* CONTEUDO */
 .card-content {
     padding: 20px;
-    text-align: center;
 }
 
 .card-content h3 {
-    margin: 0;
-    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
 }
 
-.price {
-    margin: 12px 0;
-    font-size: 18px;
+.card-content ul {
+    padding-left: 18px;
+    font-size: 15px;
+}
+
+.price-note {
     font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
 }
 
-/* BOTAO */
 .btn {
-    display: inline-block;
+    display: block;
+    margin: 15px auto 0;
     background-color: #ffd84d;
     color: #000;
     padding: 14px 22px;
     border-radius: 40px;
     font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
+    text-align: center;
+    width: fit-content;
 }
 
-/* FOOTER */
 footer {
     margin: 60px 0 20px;
     text-align: center;
@@ -118,23 +106,115 @@ footer {
 
 <header>
     <h1>☁️ Céu Azul Doces</h1>
-    <p>Confeitaria artesanal • Cardápio online</p>
+    <p>Bolos personalizados sob encomenda</p>
 </header>
 
-<!-- BOLOS DE FESTA -->
-<div class="category-title">🎂 Bolos de Festa</div>
+<div class="category-title">🎂 Bolos Personalizados</div>
+
 <div class="grid">
-    <div class="card">
-        <img src="imagens/bolo-festa-01.jpg">
-        <div class="card-content">
-            <h3>Bolo Decorado</h3>
-            <div class="price">Sob consulta</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Gostaria de um bolo de festa">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
+
+<!-- BOLO 1KG -->
+<div class="card">
+<img src="imagens/bolo-1kg.jpg">
+<div class="card-content">
+<h3>Bolo 1kg</h3>
+<ul>
+<li>Chocolate ao leite — R$ 90,00</li>
+<li>Ninho — R$ 90,00</li>
+<li>2 amores (ninho + chocolate) — R$ 98,00</li>
+<li>Chocolate com morango — R$ 110,00</li>
+<li>Ninho com morango — R$ 110,00</li>
+<li>Floresta Negra — R$ 110,00</li>
+<li>Doce de leite com nozes — R$ 110,00</li>
+<li>Ninho com Nutella — R$ 130,00</li>
+<li>Brigadeiro ao leite — R$ 90,00</li>
+<li>Prestígio — R$ 98,00</li>
+<li>Ferrero Rocher — R$ 130,00</li>
+<li>Abacaxi com coco — R$ 110,00</li>
+<li>Red Velvet com Ninho — R$ 130,00</li>
+</ul>
+<div class="price-note">Serve até 10 pessoas</div>
+<a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
+</div>
 </div>
 
-<!-- CASEIRINHOS -->
-<div class="category-
+<!-- BOLO 2KG -->
+<div class="card">
+<img src="imagens/bolo-2kg.jpg">
+<div class="card-content">
+<h3>Bolo 2kg (Redondo ou Retangular)</h3>
+<ul>
+<li>Chocolate ao leite — R$ 180,00</li>
+<li>Ninho — R$ 180,00</li>
+<li>2 amores — R$ 196,00</li>
+<li>Chocolate com morango — R$ 220,00</li>
+<li>Ninho com Nutella — R$ 260,00</li>
+<li>Ferrero Rocher — R$ 260,00</li>
+<li>Red Velvet com Ninho — R$ 260,00</li>
+</ul>
+<div class="price-note">Serve até 20 pessoas</div>
+<a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
+</div>
+</div>
+
+<!-- BOLO 3KG -->
+<div class="card">
+<img src="imagens/bolo-3kg.jpg">
+<div class="card-content">
+<h3>Bolo 3kg</h3>
+<ul>
+<li>Chocolate ao leite — R$ 270,00</li>
+<li>Ninho — R$ 270,00</li>
+<li>2 amores — R$ 294,00</li>
+<li>Chocolate com morango — R$ 330,00</li>
+<li>Ninho com Nutella — R$ 390,00</li>
+<li>Ferrero Rocher — R$ 390,00</li>
+</ul>
+<div class="price-note">Serve até 30 pessoas</div>
+<a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
+</div>
+</div>
+
+<!-- BOLO 4KG -->
+<div class="card">
+<img src="imagens/bolo-4kg.jpg">
+<div class="card-content">
+<h3>Bolo 4kg</h3>
+<ul>
+<li>Chocolate ao leite — R$ 360,00</li>
+<li>Ninho — R$ 360,00</li>
+<li>2 amores — R$ 392,00</li>
+<li>Chocolate com morango — R$ 440,00</li>
+<li>Ninho com Nutella — R$ 520,00</li>
+</ul>
+<div class="price-note">Serve até 40 pessoas</div>
+<a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
+</div>
+</div>
+
+<!-- BOLO 5KG -->
+<div class="card">
+<img src="imagens/bolo-5kg.jpg">
+<div class="card-content">
+<h3>Bolo 5kg</h3>
+<ul>
+<li>Chocolate ao leite — R$ 450,00</li>
+<li>Ninho — R$ 450,00</li>
+<li>2 amores — R$ 490,00</li>
+<li>Chocolate com morango — R$ 550,00</li>
+<li>Ninho com Nutella — R$ 650,00</li>
+</ul>
+<div class="price-note">Serve até 50 pessoas</div>
+<a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 • Céu Azul Doces Confeitaria • 📲 (11) 98534-8963
+</footer>
+
+</div>
+</body>
+</html>
