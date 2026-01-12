@@ -2,101 +2,96 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Céu Azul Doces | Bolos Personalizados</title>
+<title>Céu Azul Doces | Cardápio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f9ff;
-    display: flex;
-    justify-content: center;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f9ff;
+    display:flex;
+    justify-content:center;
+}
+.container{
+    max-width:1200px;
+    width:100%;
+    padding:20px;
+}
+header{
+    background:#a8d8ff;
+    border-radius:16px;
+    padding:30px;
+    text-align:center;
+}
+header h1{margin:0;font-size:36px}
+header p{font-size:18px}
+
+.category-title{
+    background:#fff2a8;
+    text-align:center;
+    padding:16px;
+    border-radius:12px;
+    font-size:26px;
+    margin:50px 0 30px;
 }
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 20px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
 }
 
-header {
-    background-color: #a8d8ff;
-    border-radius: 16px;
-    padding: 30px;
-    text-align: center;
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
 }
 
-.category-title {
-    background-color: #fff2a8;
-    text-align: center;
-    padding: 16px;
-    border-radius: 12px;
-    font-size: 26px;
-    margin: 50px 0 30px;
+.card-content{
+    padding:20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.card-content h3{
+    text-align:center;
+    margin-top:0;
 }
 
-.card {
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+.card-content ul{
+    padding-left:18px;
+    font-size:15px;
 }
 
-.card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
+.price-note{
+    font-weight:bold;
+    text-align:center;
+    margin:10px 0;
 }
 
-.card-content {
-    padding: 20px;
+.btn{
+    display:block;
+    margin:15px auto 0;
+    background:#ffd84d;
+    color:#000;
+    padding:14px 22px;
+    border-radius:40px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    width:fit-content;
 }
 
-.card-content h3 {
-    text-align: center;
-    margin-top: 0;
-}
-
-.card-content ul {
-    padding-left: 18px;
-    font-size: 15px;
-}
-
-.price-note {
-    font-weight: bold;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.btn {
-    display: block;
-    margin: 15px auto 0;
-    background-color: #ffd84d;
-    color: #000;
-    padding: 14px 22px;
-    border-radius: 40px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    width: fit-content;
-}
-
-footer {
-    margin: 60px 0 20px;
-    text-align: center;
-    color: #555;
+footer{
+    margin:60px 0 20px;
+    text-align:center;
+    color:#555;
 }
 </style>
 </head>
@@ -105,15 +100,15 @@ footer {
 <div class="container">
 
 <header>
-    <h1>☁️ Céu Azul Doces</h1>
-    <p>Bolos personalizados sob encomenda</p>
+<h1>☁️ Céu Azul Doces</h1>
+<p>Confeitaria artesanal • Cardápio online</p>
 </header>
 
+<!-- BOLOS PERSONALIZADOS -->
 <div class="category-title">🎂 Bolos Personalizados</div>
 
 <div class="grid">
 
-<!-- BOLO 1KG -->
 <div class="card">
 <img src="imagens/bolo-1kg.jpg">
 <div class="card-content">
@@ -121,13 +116,12 @@ footer {
 <ul>
 <li>Chocolate ao leite — R$ 90,00</li>
 <li>Ninho — R$ 90,00</li>
-<li>2 amores (ninho + chocolate) — R$ 98,00</li>
+<li>2 amores — R$ 98,00</li>
 <li>Chocolate com morango — R$ 110,00</li>
 <li>Ninho com morango — R$ 110,00</li>
 <li>Floresta Negra — R$ 110,00</li>
 <li>Doce de leite com nozes — R$ 110,00</li>
 <li>Ninho com Nutella — R$ 130,00</li>
-<li>Brigadeiro ao leite — R$ 90,00</li>
 <li>Prestígio — R$ 98,00</li>
 <li>Ferrero Rocher — R$ 130,00</li>
 <li>Abacaxi com coco — R$ 110,00</li>
@@ -138,11 +132,10 @@ footer {
 </div>
 </div>
 
-<!-- BOLO 2KG -->
 <div class="card">
 <img src="imagens/bolo-2kg.jpg">
 <div class="card-content">
-<h3>Bolo 2kg (Redondo ou Retangular)</h3>
+<h3>Bolo 2kg</h3>
 <ul>
 <li>Chocolate ao leite — R$ 180,00</li>
 <li>Ninho — R$ 180,00</li>
@@ -150,14 +143,12 @@ footer {
 <li>Chocolate com morango — R$ 220,00</li>
 <li>Ninho com Nutella — R$ 260,00</li>
 <li>Ferrero Rocher — R$ 260,00</li>
-<li>Red Velvet com Ninho — R$ 260,00</li>
 </ul>
 <div class="price-note">Serve até 20 pessoas</div>
 <a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
 </div>
 </div>
 
-<!-- BOLO 3KG -->
 <div class="card">
 <img src="imagens/bolo-3kg.jpg">
 <div class="card-content">
@@ -168,14 +159,12 @@ footer {
 <li>2 amores — R$ 294,00</li>
 <li>Chocolate com morango — R$ 330,00</li>
 <li>Ninho com Nutella — R$ 390,00</li>
-<li>Ferrero Rocher — R$ 390,00</li>
 </ul>
 <div class="price-note">Serve até 30 pessoas</div>
 <a class="btn" href="https://wa.me/5511985348963">Pedir no WhatsApp</a>
 </div>
 </div>
 
-<!-- BOLO 4KG -->
 <div class="card">
 <img src="imagens/bolo-4kg.jpg">
 <div class="card-content">
@@ -192,7 +181,6 @@ footer {
 </div>
 </div>
 
-<!-- BOLO 5KG -->
 <div class="card">
 <img src="imagens/bolo-5kg.jpg">
 <div class="card-content">
