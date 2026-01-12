@@ -6,97 +6,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f4f9ff;
-        display: flex;
-        justify-content: center;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9ff;
+    display: flex;
+    justify-content: center;
+}
 
-    .container {
-        width: 100%;
-        max-width: 900px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
 
-    header {
-        background-color: #a8d8ff;
-        color: #1a1a1a;
-        padding: 20px;
-        border-radius: 12px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+/* HEADER */
+header {
+    background-color: #a8d8ff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    h1 {
-        margin: 0;
-    }
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-    h2 {
-        background-color: #fff2a8;
-        padding: 12px;
-        border-radius: 10px;
-        text-align: center;
-        margin-top: 40px;
-    }
+header p {
+    margin-top: 8px;
+    font-size: 18px;
+}
 
-    .grid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 20px;
-    }
+/* TITULO DAS CATEGORIAS */
+.category-title {
+    background-color: #fff2a8;
+    text-align: center;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 26px;
+    margin: 50px 0 30px;
+}
 
-    .card {
-        background: #fff;
-        width: 280px;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        text-align: center;
-    }
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
 
-    .card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-    }
+/* CARD */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.2s;
+}
 
-    .card-content {
-        padding: 15px;
-    }
+.card:hover {
+    transform: scale(1.02);
+}
 
-    .price {
-        font-weight: bold;
-        margin: 10px 0;
-    }
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
 
-    .btn {
-        display: inline-block;
-        background-color: #ffd84d;
-        color: #000;
-        padding: 10px 16px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+/* CONTEUDO */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
 
-    footer {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px;
-        font-size: 14px;
-        color: #555;
-    }
+.card-content h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.price {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BOTAO */
+.btn {
+    display: inline-block;
+    background-color: #ffd84d;
+    color: #000;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    margin: 60px 0 20px;
+    text-align: center;
+    color: #555;
+}
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <header>
@@ -105,10 +122,10 @@
 </header>
 
 <!-- BOLOS DE FESTA -->
-<h2>🎂 Bolos de Festa</h2>
+<div class="category-title">🎂 Bolos de Festa</div>
 <div class="grid">
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Bolo+de+Festa">
+        <img src="imagens/bolo-festa-01.jpg">
         <div class="card-content">
             <h3>Bolo Decorado</h3>
             <div class="price">Sob consulta</div>
@@ -120,99 +137,4 @@
 </div>
 
 <!-- CASEIRINHOS -->
-<h2>🍰 Caseirinhos</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Bolo+Caseiro">
-        <div class="card-content">
-            <h3>Bolo Caseiro</h3>
-            <div class="price">R$ XX,00</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero bolo caseiro">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- DOCINHOS -->
-<h2>🍬 Docinhos de Festa</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Docinhos">
-        <div class="card-content">
-            <h3>Docinhos (100 un)</h3>
-            <div class="price">R$ XX,00</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero docinhos de festa">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- LEMBRANCINHAS -->
-<h2>🎁 Lembrancinhas</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Lembrancinhas">
-        <div class="card-content">
-            <h3>Lembrancinhas Personalizadas</h3>
-            <div class="price">Sob consulta</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero lembrancinhas">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- FESTA NA ESCOLA -->
-<h2>🏫 Festa na Escola</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Festa+na+Escola">
-        <div class="card-content">
-            <h3>Kit Festa Escolar</h3>
-            <div class="price">Sob consulta</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero kit festa escolar">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- BEM CASADO -->
-<h2>💍 Bem Casado</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Bem+Casado">
-        <div class="card-content">
-            <h3>Bem Casado</h3>
-            <div class="price">R$ XX,00</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero bem casado">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- PAO DE MEL -->
-<h2>🍯 Pão de Mel</h2>
-<div class="grid">
-    <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Pão+de+Mel">
-        <div class="card-content">
-            <h3>Pão de Mel</h3>
-            <div class="price">R$ XX,00</div>
-            <a class="btn" href="https://wa.me/5511985348963?text=Olá! Quero pão de mel">
-                Pedir no WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<footer>
-    © 2026 • Céu Azul Doces Confeitaria • 📲 (11) 98534-8963
-</footer>
-
-</div>
-</body>
-</html>
+<div class="category-
