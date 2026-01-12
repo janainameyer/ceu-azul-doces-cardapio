@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Céu Azul Doces | Cardápio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    header {
+      background: #87CEEB;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .card span {
+      color: #2f6f91;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    footer {
+      background: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>☁️ Céu Azul Doces</h1>
+  <p>Confeitaria artesanal</p>
+</header>
+
+<main class="produtos">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400x300?text=Bolo+de+Chocolate">
+    <h2>Bolo de Chocolate</h2>
+    <span>R$ 120,00</span>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400x300?text=Bolo+de+Morango">
+    <h2>Bolo de Morango</h2>
+    <span>R$ 135,00</span>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400x300?text=Doces+Finoss">
+    <h2>Doces Finos (100 un)</h2>
+    <span>R$ 180,00</span>
+  </div>
+
+</main>
+
+<footer>
+  <p>📲 Pedidos via WhatsApp</p>
+</footer>
+
+</body>
+</html>
